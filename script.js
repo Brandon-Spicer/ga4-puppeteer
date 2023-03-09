@@ -7,29 +7,26 @@ dotenv.config();
 
 (async () => {
   puppeteerExtra.use(stealthPlugin());
+
   const browser = await puppeteerExtra.launch({
     headless: false,
-    executablePath: "C:/Program Files/Google/Chrome/Application/chrome.exe",
   });
-  // const browser = await puppeteer.launch({ headless: false });
   const page = await browser.newPage();
 
   await page.goto("https://accounts.google.com/signin/v2/identifier");
   await page.type('[type="email"]', process.env.gmailUsername);
   await page.click("#identifierNext");
-  await page.waitForTimeout(2500);
+  await page.waitForTimeout(5000);
 
   await page.type('[type="password"]', process.env.password);
 
   await page.click("#passwordNext");
 
-  await page.waitForTimeout(2500);
+  await page.waitForTimeout(3000);
 
-  await page.goto(
-    "https://analytics.google.com/analytics/web/#/a248550860p341008177/admin/customdefinitions/hub"
-  );
+  await page.goto(process.env.ga4Url);
 
-  await page.waitForTimeout(2500);
+  await page.waitForTimeout(3000);
 
   await page.click('[guidedhelpid="create-custom-dimension"]');
 
