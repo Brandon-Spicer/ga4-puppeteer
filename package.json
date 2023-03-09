@@ -1,0 +1,19 @@
+{
+  "name": "ga4-puppeteer",
+  "version": "1.0.0",
+  "description": "Automate adding custom definitions to Google Analytics 4",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brandon-Spicer/ga4-puppeteer.git"
+  },
+  "author": "Brandon Spicer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brandon-Spicer/ga4-puppeteer/issues"
+  },
+  "homepage": "https://github.com/Brandon-Spicer/ga4-puppeteer#readme"
+}
