@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Brandon-Spicer/ga4-puppeteer/issues"
   },
-  "homepage": "https://github.com/Brandon-Spicer/ga4-puppeteer#readme"
+  "homepage": "https://github.com/Brandon-Spicer/ga4-puppeteer#readme",
+  "dependencies": {
+    "puppeteer": "^19.7.3",
+    "puppeteer-core": "^19.7.3"
+  }
 }
