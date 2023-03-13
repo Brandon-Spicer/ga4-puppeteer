@@ -1,3 +1,4 @@
 node_modules/
-.env
 log-into-google-with-puppeteer/
+.env
+notes
