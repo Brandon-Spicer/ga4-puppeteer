@@ -19,12 +19,13 @@ npm install
 
 ### 3. Create `.env` file
 
-Add your gmail address and password. Then sign into your Google Analytics account and go to Admin > Custom Definitions. Copy the URL and set it as the value for ga4Url.
+Add your gmail address and password. Sign into your Google Analytics account, select the property from which to copy settings, and go to Admin > Custom Definitions. Copy the URL and set it as the value for importFromUrl. Do the same for the destination property and set it as the value for exportToUrl.
 
 ```
 gmailUsername="yourname@gmail.com"
 password="1234"
-ga4Url="https://analytics.google.com/analytics/web/#/.../admin/customdefinitions/hub"
+importFromUrl="https://analytics.google.com/analytics/web/#/.../admin/customdefinitions/hub"
+exportFromUrl="https://analytics.google.com/analytics/web/#/.../admin/customdefinitions/hub"
 ```
 
 ### 4. Run

@@ -7,7 +7,7 @@ export default async function signin(page) {
   //     visible: true,
   //     timeout: 0,
   //   });
-  await page.waitForTimeout(5000);
+  await page.waitForTimeout(6000);
   await page.type('[type="password"]', process.env.password);
 
   await page.waitForSelector("#passwordNext");
