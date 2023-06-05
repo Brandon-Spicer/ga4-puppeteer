@@ -34,4 +34,4 @@ exportFromUrl="https://analytics.google.com/analytics/web/#/.../admin/customdefi
 npm start
 ```
 
-Right now this will just sign into google and create a new test dimension.
+Currently, this will only copy over custom dimensions, not metrics or custom events.
